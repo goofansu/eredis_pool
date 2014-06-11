@@ -8,7 +8,7 @@ update-deps:
 	@$(REBAR) update-deps
 
 get-deps:
-	test -d deps || @$(REBAR) get-deps
+	test -d deps || ./rebar get-deps
 
 compile:
 	@$(REBAR) compile
